@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>画像URLクリック化 & 安全性チェック</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>画像内URLをクリック可能に変換</h1>
+      <p class="description">
+        画像をアップロードするとOCRでURLを抽出し、クリック可能なリンクとして表示します。各URLは編集/確定でき、安全性の目安も確認できます。
+      </p>
+
+      <section class="panel">
+        <label for="imageInput" class="file-label">画像を選択</label>
+        <input id="imageInput" type="file" accept="image/*" />
+        <img id="preview" alt="選択した画像のプレビュー" hidden />
+        <p id="status" class="status">画像を選択してください。</p>
+      </section>
+
+      <section class="panel">
+        <h2>抽出されたURL</h2>
+        <ul id="urlList" class="url-list"></ul>
+      </section>
+    </main>
+
+    <template id="urlItemTemplate">
+      <li class="url-item">
+        <div class="url-main">
+          <a class="url-link" target="_blank" rel="noopener noreferrer"></a>
+          <input class="url-input" type="text" hidden />
+        </div>
+        <div class="controls">
+          <button class="edit-btn" type="button">編集</button>
+          <button class="save-btn" type="button" hidden>確定</button>
+        </div>
+        <p class="safety"></p>
+      </li>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
