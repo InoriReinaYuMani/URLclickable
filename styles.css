@@ -128,3 +128,13 @@ button:hover {
 .risky {
   color: #fca5a5;
 }
+
+.notice {
+  margin: 0.85rem 0 0;
+  padding: 0.65rem 0.75rem;
+  border-left: 3px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.12);
+  color: #fde68a;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
