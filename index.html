@@ -6,6 +6,7 @@
     <title>画像URLクリック化 & 安全性チェック</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "670fa78a9f394c15980faa338d3b3d7d"}'></script><!-- End Cloudflare Web Analytics -->
   </head>
   <body>
     <main class="container">
@@ -22,11 +23,11 @@
       </section>
 
       <section class="panel">
-        <h2>抽出されたURL</h2>
+        <div class="section-head">
+          <h2>抽出されたURL</h2>
+          <p class="notice" role="note">リンク先の閲覧・実行は自己責任で行なってください。</p>
+        </div>
         <ul id="urlList" class="url-list"></ul>
-      <p class="notice" role="note">
-        ※安全性判定はヒューリスティックな参考情報です。リンク先の閲覧・実行は自己責任で行ってください。
-      </p>
       </section>
     </main>
 
