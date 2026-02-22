@@ -1,0 +1,156 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Noto Sans JP", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.panel {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 0.75rem 0;
+}
+
+.file-label {
+  display: inline-block;
+  font-weight: 600;
+}
+
+#preview {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  border: 1px solid #4b5563;
+  background: #0b1220;
+  margin-bottom: 0.75rem;
+}
+
+.status {
+  margin: 0.5rem 0 0;
+}
+
+.url-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.url-item {
+  border: 1px solid #4b5563;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background: #111827;
+}
+
+.url-main {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.url-link {
+  color: #93c5fd;
+  text-decoration: underline;
+  word-break: break-all;
+  flex: 1;
+}
+
+.url-input {
+  flex: 1;
+  width: 100%;
+  border-radius: 0.4rem;
+  border: 1px solid #6b7280;
+  padding: 0.45rem;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+.controls {
+  margin-top: 0.5rem;
+}
+
+button {
+  border: 1px solid #9ca3af;
+  background: #1f2937;
+  color: #f9fafb;
+  border-radius: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #374151;
+}
+
+.safety {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+}
+
+.safe {
+  color: #86efac;
+}
+
+.caution {
+  color: #fcd34d;
+}
+
+.risky {
+  color: #fca5a5;
+}
+
+
+
+
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.section-head h2 {
+  margin: 0;
+}
+
+.notice {
+  margin: 0;
+  padding: 0.35rem 0.6rem;
+  border-left: 3px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.12);
+  color: #fde68a;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
